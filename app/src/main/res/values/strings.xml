@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Basketball Club</string>
+    <string name="col0">No.</string>
+    <string name="col1">Nama</string>
+    <string name="col2">Alamat</string>
+    <string name="col3">No. HP</string>
+    <string name="col4">Jenis Kelamin</string>
+    <string name="col5">Lokasi Pendaftaran</string>
+    <string name="col6">Foto</string>
+
+</resources>

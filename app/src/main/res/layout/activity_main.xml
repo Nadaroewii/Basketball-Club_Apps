@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:background="@color/ivory"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form Pendaftaran"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp" />
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama :"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="14"
+            android:hint="Tulis Nama Anda"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat :"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:ems="14"
+            android:hint="Tulis Alamat Anda"
+            android:textStyle="bold"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No HP :"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="12"
+            android:textStyle="bold"
+            android:hint="Tulis Nomor Telepon Anda"
+            android:inputType="phone"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis \nKelamin :"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/perempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="16sp"
+                />
+            <RadioButton android:id="@+id/Pria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-Laki"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="16sp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi Pendaftaran :"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_button"
+            android:drawableLeft="@drawable/location"
+            android:paddingLeft="11dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/Hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Foto :"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/resultfoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Pilih file..."
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_button"
+            android:drawableLeft="@drawable/image"
+            android:paddingLeft="12dp"/>
+    </LinearLayout>
+</LinearLayout>
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:text="SUBMIT"
+        android:textStyle="bold"
+        android:backgroundTint="@color/dark_brown"
+        android:layout_gravity="center" />
+</LinearLayout>
